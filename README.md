@@ -1,5 +1,5 @@
 # Databricks-Medallion
-Demo architecture dababricks medallion
+Demo arquitectura Dababricks medallas (medallion)
 
 Este proyecto fue creado por:
 Hugo González Olaya
@@ -14,7 +14,7 @@ Este esquema tiene las tablas:
 - sales_suppliers: Proveedores
 - sales_transactios: Ventas de la tienda
 
-NOTA: En este proyecto solo va utilizar las tablas sales_*
+NOTA: En este proyecto solo va a utilizar las tablas sales_*
 
 ## Notebooks
 1. Bakehouse_Delete: Borra los objetos
@@ -38,7 +38,7 @@ Los cuadernos crean y procesan los datos en los esquemas
 - Gold
 
 ### Tablas
-Los nombre de las tablas tienen el formato: tabla_{Esquema}
+Los nombres de las tablas tienen el formato: tabla_{Esquema}
 Todas las tablas son cargadas en el esquema Raw y Bronze
 En los esquemas Silver y Gold solo será poblada la tabla: Customers
 
@@ -64,13 +64,13 @@ En la tabla de clientes son realizado las siguientes transformaciones:
 
 4. Gold
 Para la tabla de clientes son realizadas las siguientes agrupaciones
-* Contar numero de clientes diferentes por pais, y contrar número de clientes diferentes por pais y estado.
+* Contar numero de clientes diferentes por pais, y contar número de clientes diferentes por pais y estado.
 
 ## Work Flow
 El proyecto también cuenta con un WorkFlow que ejecuta todos los notebooks.
 Tiene una agenda diaria pero esta deshabilitada.
 
-El oden de ejecución es el siguiente
+El orden de ejecución es el siguiente
 1. Bakehouse_Delete
 2. bakehouse_create
 3. bakehouse_grant
