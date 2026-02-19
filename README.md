@@ -84,3 +84,6 @@ La tarea de insertar en silver es ejecutada cuando termina insertan en las capas
 ### Licencia
 El codigo es de uso libre.
 El autor no se hace responsable por el uso del codigo.
+
+# Git
+En este repositorio, seran incluido el uso de algunas acciones con Git.
